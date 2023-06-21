@@ -1,0 +1,35 @@
+@import "common";
+
+.SideBar{
+  width: 100px;
+  height: 100%;
+  background-color: #1D2024;
+  text-align: center;
+  .logo{
+    color: $pointGreen;
+    cursor: pointer;
+    padding: 45px 0 36px;
+    letter-spacing: -22px;
+    margin-right: 22px;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  .side-bar{
+    margin-top: 50px;
+    li{
+      cursor: pointer;
+      padding: 23px 0;
+      transition: .2s;
+      svg, path{
+        color: #43444B;
+        transition: .2s;
+      }
+      &.on{
+        background-color: #2A2B31;
+        svg, path{
+          color: #fff;
+        }
+      }
+    }
+  }
+}

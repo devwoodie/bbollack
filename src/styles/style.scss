@@ -1,0 +1,52 @@
+@import "reset.css";
+@import "sidebar";
+@import "main";
+
+.App{
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  .cont{
+    width: 1300px;
+    padding: 55px 25px;
+    //top
+    .main-top{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .sub-logo{
+        font-weight: normal;
+        font-size: 18px;
+      }
+      .Login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .user-name{
+          font-size: 14px;
+          margin-right: 15px;
+        }
+        .user-image{
+          width: 35px; height: 35px;
+          background-color: #2A2B31;
+          border-radius: 2px;
+          position: relative;
+          cursor: pointer;
+          span{
+            //width: 100%; height: 100%;
+            display: block;
+            position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            svg, path{
+              color: #43444B;
+            }
+          }
+        }
+      }
+    }
+  }
+}

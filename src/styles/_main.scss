@@ -1,0 +1,172 @@
+@import "common";
+@import "wallets";
+
+.Main{
+
+
+  //contents
+  .cont-wrap{
+    margin-top: 60px;
+    align-items: flex-start;
+    //left cont
+    .left-cont{
+      width: 74%;
+      .left-top-cont{
+        align-items: flex-start;
+        .Overview{
+          width: 29%;
+          h3{
+            font-weight: normal;
+            color: #48484b;
+            font-size: 16px;
+            font-family: "Lato", serif;
+          }
+          .inner-cont{
+            background: #2A2B31;
+            padding: 28px;
+            margin-top: 15px;
+            height: 305px;
+            //거래 횟수
+            .transaction-wrap{
+              .transaction-count{
+                display: block;
+                font-size: 45px;
+                font-weight: 300;
+              }
+              small{
+                font-size: 12px;
+                font-weight: 300;
+                color: #8f8f8f;
+                margin-top: 10px;
+                display: block;
+              }
+            }
+            //지갑 갯수
+            .wallets-wrap{
+              background: #252529;
+              border-radius: 2px;
+              padding: 15px;
+              .wallets-count{
+                display: block;
+                font-size: 40px;
+                text-align: center;
+                font-weight: 300;
+              }
+              small{
+                display: block;
+                margin-top: 10px;
+              }
+            }
+
+            //뉴스
+            .news-wrap{
+              margin-top: 35px;
+              position: relative;
+              .news-title{
+                font-size: 14px;
+                color: #8f8f8f;
+              }
+              p{
+                margin-top: 10px;
+                font-size: 18px;
+                line-height: 1.1;
+              }
+              a{
+                position: absolute;
+                font-size: 14px;
+                right: 0; bottom: -75%;
+                border-radius: 20px;
+                padding: 4px 12px;
+                border: 2px solid #7AC231;
+                transition: .3s;
+                &:hover{
+                  background-color: #7AC231;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //right cont
+    .right-cont{
+      margin-top: 31px;
+      width: 24%;
+      //transactions
+      .Transactions{
+        background-color: #222429;
+        padding: 20px 15px;
+        height: 450px;
+        h3{
+          font-weight: normal;
+          color: #fff;
+          font-size: 16px;
+        }
+        .transactions-wrap{
+          overflow-y: scroll;
+          margin-top: 20px;
+          height: 370px;
+          &::-webkit-scrollbar{display: none;}
+          li{
+            background: #2A2B31;
+            border-radius: 2px;
+            padding: 10px;
+            margin-bottom: 10px;
+            .transactions-date{
+              display: block;
+              font-size: 12px;
+            }
+            .transactions-amount{
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              i{margin: 2px 4px 0 0;}
+              &.buy{
+                svg,path{color: #7AC231;}
+              }
+              &.sell{
+                svg,path{color: #D0021B;}
+              }
+            }
+            .transactions-account{
+              font-size: 10px;
+              color: #616161;
+            }
+          }
+        }
+      }
+
+      //Fee
+      .Fee{
+        margin-top: 6%;
+        background-color: #222429;
+        padding: 20px 15px;
+        h3{
+          font-weight: normal;
+          color: #8f8f8f;
+          font-size: 12px;
+        }
+        .eth{
+          display: flex;
+          margin: 10px 0 5px;
+          font-size: 15px;
+        }
+        .fee-wrap{
+          li{
+            font-size: 15px;
+            padding: 8px 0;
+            border-bottom: 1px solid #8f8f8f;
+            &:last-child{border: none;}
+            span{}
+            i{
+              font-style: normal;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
