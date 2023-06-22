@@ -5,17 +5,7 @@ import WalletsCoinBox from "./WalletsCoinBox";
 import WalletsProgress from "./WalletsProgress";
 
 const Wallets = () => {
-    const [coins, setCoins] = useState([]);
 
-    useEffect(() => {
-        fetch("https://api.coinpaprika.com/v1/tickers?quotes=KRW")
-            .then(response => response.json())
-            .then(json => {
-                setCoins(json.slice(0, 100)); // 가져온 데이터 1~100위 담기
-                console.log(coins)
-            });
-
-    }, [])
     return(
         <div className="Wallets">
             <h3>My wallets</h3>

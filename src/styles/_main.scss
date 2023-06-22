@@ -11,6 +11,7 @@
     //left cont
     .left-cont{
       width: 74%;
+      //left top content
       .left-top-cont{
         align-items: flex-start;
         .Overview{
@@ -75,12 +76,109 @@
                 position: absolute;
                 font-size: 14px;
                 right: 0; bottom: -75%;
-                border-radius: 20px;
+                border-radius: 14px;
                 padding: 4px 12px;
                 border: 2px solid #7AC231;
                 transition: .3s;
                 &:hover{
                   background-color: #7AC231;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      //left bottom content
+      .left-bottom-cont{
+        margin-top: 2%;
+        .Purchase{
+          width: 69%;
+          height: 320px;
+          padding: 20px;
+          position: relative;
+          h3{
+            font-weight: normal;
+            color: #fff;
+            font-size: 16px;
+          }
+          .buy-sell-tab{
+            justify-content: center;
+            position: absolute;
+            right: 20px; top: 20px;
+            li{
+              font-size: 14px;
+              color: #8f8f8f;
+              padding: 5px 15px;
+              margin: 0 5px;
+              cursor: pointer;
+              transition: .3s;
+              border-radius: 14px;
+              &.on{
+                color: #fff;
+                background: #4C4D55;
+              }
+            }
+          }
+          form{
+            margin-top: 30px;
+            > div{
+              margin-bottom: 20px;
+              p{
+                justify-content: flex-start;
+                font-size: 18px;
+                margin-bottom: 5px;
+              }
+              div.flex-box{
+                justify-content: flex-start;
+                label{
+                  font-size: 14px;
+                  margin-right: 10px;
+                  color: #8f8f8f;
+                }
+                input[type="text"]{
+                  background: #2A2B31;
+                  border-radius: 2px;
+                  border: none;
+                  outline: none;
+                  padding: 5px 10px;
+                  text-align: right;
+                  width: 34%;
+                }
+                .coin-name{
+                  font-size: 12px;
+                  margin: 15px 0 0 5px;
+                }
+                .add-percent{
+                  margin-left: 15px;
+                  margin-top: 8px;
+                  button{
+                    cursor: pointer;
+                    font-size: 12px;
+                    border-radius: 2px;
+                    background-color: #2A2B31;
+                    padding: 5px;
+                    margin-right: 5px;
+                  }
+                }
+              }
+            }
+            div.account{
+              margin: 40px 0 0;
+            }
+            .purchase-btn-wrap{
+              width: 100%;
+              text-align: right;
+              margin: 10px 0 0;
+              .purchase-btn{
+                border: 2px solid #3F4048;
+                border-radius: 14px;
+                font-size: 14px;
+                padding: 4px 12px;
+                cursor: pointer;
+                transition: .3s;
+                &:hover{
+                  border: 2px solid #7AC231;
                 }
               }
             }

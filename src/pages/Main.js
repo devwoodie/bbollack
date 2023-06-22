@@ -2,6 +2,7 @@ import Overview from "../components/Overview";
 import Wallets from "../components/wallets/Wallets";
 import Transactions from "../components/Transactions";
 import Fee from "../components/Fee";
+import Purchase from "../components/purchase/Purchase";
 
 
 const Main = () => {
@@ -13,9 +14,9 @@ const Main = () => {
                         <Overview />
                         <Wallets />
                     </div>
-                    <div className="left-bottom-cont flex-box" style={{marginTop: "2%"}}>
-                        <div className="inner-cont" style={{width: "64%", height: "320px", padding: "20px" }}>buy</div>
-                        <div className="inner-cont" style={{width: "34%", height: "320px", padding: "20px" }}>Cryptocurrency Price</div>
+                    <div className="left-bottom-cont flex-box">
+                        <Purchase />
+                        <div className="inner-cont" style={{width: "29%", height: "320px", padding: "20px" }}>Cryptocurrency Price</div>
                     </div>
                 </div>
                 <div className="right-cont">
