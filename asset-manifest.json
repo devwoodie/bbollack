@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/crypto-bbollack/static/css/main.88aafa17.css",
+    "main.js": "/crypto-bbollack/static/js/main.d46c3476.js",
+    "static/js/787.aa3866de.chunk.js": "/crypto-bbollack/static/js/787.aa3866de.chunk.js",
+    "static/media/Poppins-Regular.woff": "/crypto-bbollack/static/media/Poppins-Regular.472879482db208eca4c8.woff",
+    "static/media/Poppins-Light.woff": "/crypto-bbollack/static/media/Poppins-Light.61202b6b9355420f6e5e.woff",
+    "static/media/Poppins-Medium.woff": "/crypto-bbollack/static/media/Poppins-Medium.fc484312e9b8924b180b.woff",
+    "static/media/Poppins-Bold.woff": "/crypto-bbollack/static/media/Poppins-Bold.d49572278982a1a5ab41.woff",
+    "static/media/Lato-Regular.woff": "/crypto-bbollack/static/media/Lato-Regular.e8ad014fd5f5306f417d.woff",
+    "static/media/Lato-Bold.woff": "/crypto-bbollack/static/media/Lato-Bold.3637017b1764681ffb3f.woff",
+    "static/media/Lato-Light.woff": "/crypto-bbollack/static/media/Lato-Light.0e3a918da7aed0b06f90.woff",
+    "index.html": "/crypto-bbollack/index.html",
+    "main.88aafa17.css.map": "/crypto-bbollack/static/css/main.88aafa17.css.map",
+    "main.d46c3476.js.map": "/crypto-bbollack/static/js/main.d46c3476.js.map",
+    "787.aa3866de.chunk.js.map": "/crypto-bbollack/static/js/787.aa3866de.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88aafa17.css",
+    "static/js/main.d46c3476.js"
+  ]
+}
