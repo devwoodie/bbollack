@@ -1,10 +1,9 @@
 import { FaUser } from "react-icons/fa";
 
 const Login = (props) => {
-    const { isConnected, connectWallet, currentBalance, walletAddress } = props;
+    const { isConnected, connectWallet, walletAddress } = props;
 
-    const displayWalletAddress = `${walletAddress?.substring(0,15)}...`
-    const displayCurrentBalance = `${currentBalance?.toFixed(4)}`
+    const displayWalletAddress = `${walletAddress?.substring(0,15)}...`;
 
     return(
         <>

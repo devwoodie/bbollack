@@ -1,11 +1,13 @@
 import BuyToken from "./BuyToken";
 import SellToken from "./SellToken";
 import {useState} from "react";
+import {useSelector} from "react-redux";
 
 
 const Purchase = () => {
 
     const [isDivision, setIsDivision] = useState(0);
+    const userAccount = useSelector((state) => state.metaAccount.metaAccount);
 
     const tabArr = [
         { name: 'Buy' },
@@ -33,7 +35,7 @@ const Purchase = () => {
                         <label>Account</label>
                         <input
                             type="text"
-                            value="0xdfE5672D62a479D0D31C5632fA87803992A98692"
+                            value={userAccount}
                             readOnly={true}
                             style={{width: "65%", textAlign: "left", color: "#616161"}}
                         />

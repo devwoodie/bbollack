@@ -1,8 +1,8 @@
 import {BsArrowLeft, BsArrowRight} from "react-icons/bs"
 
-const Transactions = () => {
+const Transactions = ({ isConnected }) => {
     return(
-        <div className="Transactions">
+        <div className={isConnected ? "Transactions" : "Transactions blur"}>
             <h3>Transactions</h3>
             <ul className="transactions-wrap">
                 <li>

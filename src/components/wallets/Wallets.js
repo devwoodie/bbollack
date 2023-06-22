@@ -2,8 +2,11 @@ import { FaEthereum, FaWonSign } from "react-icons/fa"
 import { SiWebmoney } from "react-icons/si"
 import WalletsCoinBox from "./WalletsCoinBox";
 import WalletsProgress from "./WalletsProgress";
+import {useSelector} from "react-redux";
 
 const Wallets = ({ isConnected }) => {
+
+    const userEthereum = useSelector((state) => state.metaEthereum.metaEthereum);
 
     return(
         <div className="Wallets">
@@ -19,7 +22,7 @@ const Wallets = ({ isConnected }) => {
                     <WalletsCoinBox
                         coinSmName="ETH"
                         coinName="Ethereum"
-                        coinAmount="120.34"
+                        coinAmount={isConnected ? userEthereum : "223.4453"}
                         icon={<FaEthereum size={25} />}
                     />
                     <WalletsCoinBox

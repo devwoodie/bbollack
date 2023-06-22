@@ -21,7 +21,7 @@ const Main = ({ isConnected }) => {
                     </div>
                 </div>
                 <div className="right-cont">
-                    <Transactions />
+                    <Transactions isConnected={isConnected} />
                     <Fee />
                 </div>
             </div>

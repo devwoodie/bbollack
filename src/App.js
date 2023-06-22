@@ -1,12 +1,15 @@
-import React, {useCallback, useState} from "react";
+import React, {useCallback, useState, useEffect} from "react";
 import { ethers } from "ethers";
 import { Routes, Route } from "react-router-dom";
 import Main from "./pages/Main";
 import SideBar from "./components/SideBar";
 import Login from "./components/Login";
+import {setMetaEthereumStore, setMetaAccountStore} from "./store/reducers/metamaskData"
+import {useDispatch} from "react-redux";
 
 function App() {
 
+    const dispatch = useDispatch();
     const [provider, setProvider] = useState(undefined);
     const [signer, setSigner] = useState(undefined);
     const [walletAddress, setWalletAddress] = useState(undefined);
@@ -60,9 +63,12 @@ function App() {
             signer.getAddress(),
             signer.getBalance(),
         ])
-        console.log(result)
-        setWalletAddress(result[0])
-        setCurrentBalance(Number(result[1]))
+
+        setWalletAddress(result[0]);
+        setCurrentBalance(Number(ethers.utils.formatEther(result[1])));
+        const displayWalletBalance = Number(ethers.utils.formatEther(result[1]))?.toFixed(4);
+        dispatch(setMetaEthereumStore(displayWalletBalance));
+        dispatch(setMetaAccountStore(result[0]));
     }
 
     return (
@@ -75,7 +81,6 @@ function App() {
                         isConnected={isConnected}
                         connectWallet={connectWallet}
                         walletAddress={walletAddress}
-                        currentBalance={currentBalance}
                     />
                 </div>
                 <Routes>
