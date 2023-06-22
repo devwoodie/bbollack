@@ -6,14 +6,14 @@ import Purchase from "../components/purchase/Purchase";
 import Quotes from "../components/Quotes";
 
 
-const Main = () => {
+const Main = ({ isConnected }) => {
     return(
         <div className="Main">
             <div className="cont-wrap flex-box">
                 <div className="left-cont">
                     <div className="left-top-cont flex-box">
                         <Overview />
-                        <Wallets />
+                        <Wallets isConnected={isConnected} />
                     </div>
                     <div className="left-bottom-cont flex-box">
                         <Purchase />

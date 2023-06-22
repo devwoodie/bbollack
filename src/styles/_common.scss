@@ -10,3 +10,8 @@ $pointGreen: #78BD38;
   justify-content: space-between;
   align-items: center;
 }
+
+.blur{
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}

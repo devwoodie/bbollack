@@ -25,6 +25,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+        &.true{
+          .user-image{
+            background-color: #7AC231;
+            span{
+              svg, path{
+                color: #fff;
+              }
+            }
+          }
+        }
         .user-name{
           font-size: 14px;
           margin-right: 15px;
@@ -34,7 +45,6 @@
           background-color: #2A2B31;
           border-radius: 2px;
           position: relative;
-          cursor: pointer;
           span{
             //width: 100%; height: 100%;
             display: block;

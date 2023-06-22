@@ -3,13 +3,13 @@ import { SiWebmoney } from "react-icons/si"
 import WalletsCoinBox from "./WalletsCoinBox";
 import WalletsProgress from "./WalletsProgress";
 
-const Wallets = () => {
+const Wallets = ({ isConnected }) => {
 
     return(
         <div className="Wallets">
             <h3>My wallets</h3>
             <div className="wallets-wrap">
-                <ul className="coin-wrap flex-box">
+                <ul className={isConnected ? "coin-wrap flex-box" : "coin-wrap flex-box blur"}>
                     <WalletsCoinBox
                         coinSmName="CED"
                         coinName="Cedars"
@@ -30,7 +30,7 @@ const Wallets = () => {
                     />
                 </ul>
             </div>
-            <div className="flex-box" style={{marginTop: "3%"}}>
+            <div className={isConnected ? "flex-box" : "flex-box blur"} style={{marginTop: "3%"}}>
                 <WalletsProgress />
                 <div className="empty inner-cont" style={{width: "53%", height: "178px", padding: "20px"}}>Current Balance</div>
             </div>
