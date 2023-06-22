@@ -11,7 +11,7 @@ const SideBar = () => {
         <div className="SideBar">
             <h1 className="logo">BB</h1>
             <ul className="side-bar">
-                <li onClick={() => {navigate('/'); setPageIndex(0);}} className={pageIndex === 0 ? 'on' : ''}>
+                <li onClick={() => {navigate('/crypto-bbollack'); setPageIndex(0);}} className={pageIndex === 0 ? 'on' : ''}>
                     <BsGrid1X2Fill size={20} />
                 </li>
                 <li onClick={() => {navigate('/1'); setPageIndex(1);}} className={pageIndex === 1 ? 'on' : ''}>

@@ -84,7 +84,7 @@ function App() {
                     />
                 </div>
                 <Routes>
-                    <Route path="/" element={<Main isConnected={isConnected} />} />
+                    <Route path="/crypto-bbollack" element={<Main isConnected={isConnected} />} />
                 </Routes>
             </div>
         </div>
