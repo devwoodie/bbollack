@@ -1,4 +1,3 @@
-import {useState, useEffect} from "react";
 import { FaEthereum, FaWonSign } from "react-icons/fa"
 import { SiWebmoney } from "react-icons/si"
 import WalletsCoinBox from "./WalletsCoinBox";

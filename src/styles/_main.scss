@@ -93,7 +93,7 @@
       .left-bottom-cont{
         margin-top: 2%;
         .Purchase{
-          width: 69%;
+          width: 68%;
           height: 320px;
           padding: 20px;
           position: relative;
@@ -182,6 +182,58 @@
                 }
               }
             }
+          }
+        }
+        .Quotes{
+          width: 30%;
+          height: 320px;
+          padding: 15px;
+          background-color: #2A2B31;
+          position: relative;
+          h3{
+            font-weight: normal;
+            color: #fff;
+            font-size: 16px;
+          }
+          .reload-btn{
+            position: absolute;
+            right: 15px; top: 15px;
+            cursor: pointer;
+            svg,path{
+              color: #4C4D55;
+            }
+          }
+          table{
+            margin-top: 15px;
+            thead{
+              th{
+                padding: 5px 0;
+                font-size: 12px;
+                font-weight: normal;
+                color: #8f8f8f;
+                &:nth-of-type(1){width: 5%;}
+                &:nth-of-type(2){width: 15%;}
+                &:nth-of-type(3){width: 50%;}
+                &:nth-of-type(4){width: 30%;}
+              }
+            }
+            tbody{
+              tr{
+                td{
+                  padding: 5px;
+                  font-size: 13px;
+                  color: #dfdfdf;
+                  &:first-child{text-align: center;}
+                }
+              }
+            }
+          }
+          .quotes-date{
+            font-size: 10px;
+            display: block;
+            text-align: right;
+            margin-top: 5px;
+            color: #616161;
           }
         }
       }
