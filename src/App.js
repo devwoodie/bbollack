@@ -19,11 +19,12 @@ function App() {
     // 메타 마스크 설치 확인
     const connectWallet = useCallback(async () => {
         try{
-            if(window.ethereum !== "undefined"){
+            if(typeof window.ethereum !== "undefined"){
                 await getMetamaskData();
 
                 setIsConnected(true);
             }else{
+                console.log("please install MetaMask");
                 alert("please install MetaMask");
                 window.open("https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=ko","_blank");
             }
@@ -66,6 +67,7 @@ function App() {
 
         setWalletAddress(result[0]);
         setCurrentBalance(Number(ethers.utils.formatEther(result[1])));
+
         const displayWalletBalance = Number(ethers.utils.formatEther(result[1]))?.toFixed(4);
         dispatch(setMetaEthereumStore(displayWalletBalance));
         dispatch(setMetaAccountStore(result[0]));
